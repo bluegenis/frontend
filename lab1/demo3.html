@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icon.png">
+    <title>Document</title>
+</head>
+<body>
+    <form name="frmmain" method="get" action="#">
+        <div>
+            <label>frist name</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>last name</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>password</label>
+            <input type="password">
+        </div>
+        <div>
+            <button type="button">ok</button>
+            <button type="button">cancel</button>
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('form :text').css('border', '1px solid #cc3366');
+        $('button').css('background-color','#66cc33');
+        $('input:password').css('background-color','#898989');
+    }
+    )
+    </script>
+</body>
+</html>
