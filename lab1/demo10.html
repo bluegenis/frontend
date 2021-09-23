@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icon.png">
+    <title>Document</title>
+    <style type="text/css">
+    div
+    {
+        width: 400px;
+        height: 300px;
+        border: 1px solid red;
+        text-align: center;
+        line-height: 330px;
+        margin: 5px;
+    }
+
+    .fillbackground
+    {
+        background-color: gray;
+    }
+    </style>
+</head>
+<body>
+    <h1>demo event</h1>
+    <div>this is value</div>
+    <button type="button" id="btnshow">show</button>
+    <button type="button" id="btnhidden">hidden</button>
+    <button type="button" id="btnfadein">fade-in</button>
+    <button type="button" id="btnfadeout">fade-out</button>
+    <button type="button" id="btntoggle">toggle</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#btnshow').click(function(){
+            $('div').show(500)
+        })
+
+        $('#btnhid').click(function(){
+            $('div').hide(300)
+        })
+
+        $('#btnfadein').click(function(){
+            $('div').fadeIn(500)
+        })
+
+        $('#btnfadeout').click(function(){
+            $('div').fadeOut(500)
+        })
+
+        $('#btntoggle').click(function(){
+            $('div').toggle(500)
+        })
+    })
+    </script>
+</body>
+</html>
